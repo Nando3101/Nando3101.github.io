@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="Portafolio de Fernando Danilo Barragán Garcia, estudiante de Ingeniería en Software.">
+  <title>Fernando Barragán | Portafolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 22px;
+      padding: 20px;
+      background: #111c32;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #5eead4;
+    }
+
+    header {
+      max-width: 1000px;
+      margin: auto;
+      padding: 85px 24px;
+      text-align: center;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 25px;
+      border-radius: 24px;
+      background: #5eead4;
+      color: #0f172a;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .etiqueta {
+      color: #5eead4;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 16px 0;
+      font-size: clamp(32px, 6vw, 55px);
+      line-height: 1.2;
+    }
+
+    header p {
+      max-width: 650px;
+      margin: 20px auto;
+      color: #b7c5d8;
+    }
+
+    .boton {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 12px 22px;
+      border: 1px solid #5eead4;
+      border-radius: 10px;
+      background: #5eead4;
+      color: #0f172a;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .secundario {
+      background: transparent;
+      color: #5eead4;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 40px 0;
+      border-top: 1px solid #29364c;
+    }
+
+    h2 {
+      color: #5eead4;
+      font-size: 28px;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .tarjeta {
+      padding: 25px;
+      border: 1px solid #29364c;
+      border-radius: 15px;
+      background: #172238;
+    }
+
+    .tarjeta h3 {
+      margin-top: 0;
+    }
+
+    .tecnologia {
+      display: inline-block;
+      margin: 5px 4px 5px 0;
+      padding: 6px 12px;
+      border-radius: 7px;
+      background: #26364e;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px;
+      text-align: center;
+      color: #a8b8ce;
+      border-top: 1px solid #29364c;
+    }
+
+    a:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 5px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav aria-label="Navegación principal">
+    <a href="#acerca">Acerca de mí</a>
+    <a href="#tecnologias">Tecnologías</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <header>
+    <div class="avatar" aria-hidden="true">FB</div>
+    <span class="etiqueta">MI PORTAFOLIO PERSONAL</span>
+
+    <h1>Fernando Danilo Barragán Garcia</h1>
+
+    <p>
+      Estudiante de Ingeniería en Software y desarrollador
+      en formación. Aprendiendo mediante proyectos de
+      programación, desarrollo web y bases de datos.
+    </p>
+
+    <a class="boton" href="https://github.com/Nando3101">
+      Visitar mi GitHub ↗
+    </a>
+
+    <a class="boton secundario" href="#proyectos">
+      Conocer mi proyecto
+    </a>
+  </header>
+
+  <main>
+    <section id="acerca">
+      <h2>👨‍💻 Acerca de mí</h2>
+
+      <p>
+        Soy Fernando Danilo Barragán Garcia, estudiante de
+        Ingeniería en Software, ubicado en Ambato, Ecuador.
+      </p>
+
+      <p>
+        Estoy fortaleciendo mis conocimientos en programación,
+        desarrollo web y bases de datos mediante proyectos
+        académicos y prácticos. He trabajado en un sistema
+        de ventas y facturación y continúo aprendiendo para
+        mejorar mis habilidades como desarrollador.
+      </p>
+    </section>
+
+    <section id="tecnologias">
+      <h2>🛠️ Tecnologías que he utilizado</h2>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <h3>Desarrollo web</h3>
+          <span class="tecnologia">HTML</span>
+          <span class="tecnologia">CSS</span>
+          <span class="tecnologia">JavaScript</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Programación</h3>
+          <span class="tecnologia">C#</span>
+          <span class="tecnologia">Java</span>
+        </article>
+
+        <article class="tarjeta">
+          <h3>Bases de datos</h3>
+          <span class="tecnologia">SQL</span>
+          <span class="tecnologia">PostgreSQL</span>
+          <span class="tecnologia">MariaDB</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>📂 Proyecto destacado</h2>
+
+      <article class="tarjeta">
+        <h3>Sistema de ventas y facturación</h3>
+
+        <p>
+          Proyecto en el que he trabajado durante mi formación,
+          aplicando conocimientos de programación y bases de datos.
+        </p>
+
+        <p>
+          En mis trabajos relacionados con este proyecto he
+          utilizado C#, Java, CSS, PostgreSQL y MariaDB.
+        </p>
+
+        <a class="boton secundario"
+           href="https://github.com/Nando3101?tab=repositories">
+          Explorar mis repositorios ↗
+        </a>
+      </article>
+    </section>
+
+    <section id="actividad">
+      <h2>📊 Mi actividad en GitHub</h2>
+
+      <p>
+        Consulta mis repositorios y mi gráfico de contribuciones
+        para conocer los avances que comparto durante mi formación.
+      </p>
+
+      <a class="boton secundario"
+         href="https://github.com/Nando3101">
+        Ver mi actividad ↗
+      </a>
+    </section>
+
+    <section id="contacto">
+      <h2>🤝 Contacto</h2>
+
+      <p>
+        Encuentra mis proyectos y conoce más sobre mi
+        aprendizaje en mi perfil de GitHub.
+      </p>
+
+      <a class="boton" href="https://github.com/Nando3101">
+        Ir a @Nando3101 ↗
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    Fernando Danilo Barragán Garcia ·
+    Hecho con HTML y CSS.
+  </footer>
+</body>
+</html>
